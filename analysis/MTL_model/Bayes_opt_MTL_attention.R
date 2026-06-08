@@ -143,7 +143,7 @@ bounds <- list(
 # --- Run BO ---
 set.seed(42)
 bo <- BayesianOptimization(
-  FUN          = train_lstm,
+  FUN          = train_mtl,
   bounds       = bounds,
   init_points  = 8,    # random exploration first
   n_iter       = 20,   # BO iterations after
